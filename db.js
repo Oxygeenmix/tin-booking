@@ -1,11 +1,11 @@
-// db.js
 const mysql = require('mysql');
 
 const connection = mysql.createConnection({
-    host: 'localhost',
-    user: 'root',
-    password: '',
-    database: 'booking_db'
+    host: 'sql5.freesqldatabase.com',
+    user: 'sql5712831',
+    password: 'RiSMcdmHlC',
+    database: 'sql5712831',
+    port: 3306
 });
 
 connection.connect((err) => {
