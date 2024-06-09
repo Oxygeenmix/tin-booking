@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Edit Booking</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Edit Booking</h1>
+    </header>
+    <div class="container">
+        <form action="/edit/<%= booking.id %>" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" value="<%= booking.name %>" required>
+            <label for="publisher">Publisher:</label>
+            <input type="text" name="publisher" id="publisher" value="<%= booking.publisher %>" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" value="<%= booking.quantity %>" required>
+            <button type="submit">Update</button>
+        </form>
+        <a href="/" class="button">Back to List</a>
+    </div>
+</body>
+</html>

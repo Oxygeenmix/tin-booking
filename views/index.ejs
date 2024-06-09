@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Booking List</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body style="background-color: antiquewhite;">
+    <header>
+        <h1 style="text-align: center; color: green;">Booking List</h1>
+    </header>
+    <div class="container">
+        <a href="/add" class="button" ><button style="background-color:green;color: white;">New Booking</button> </a>
+        <ul>
+            <% bookings.forEach(booking => { %>
+                <li>
+                    <%= booking.name %> - <%= booking.publisher %> - <%= booking.quantity %>
+                    <a href="/edit/<%= booking.id %>">Edit</a>
+                    <a href="/delete/<%= booking.id %>">Delete</a>
+                </li>
+            <% }) %>
+        </ul>
+    </div>
+</body>
+</html>

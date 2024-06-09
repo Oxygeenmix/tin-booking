@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Add Booking</title>
+    <link rel="stylesheet" type="text/css" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Add New Booking</h1>
+    </header>
+    <div class="container">
+        <form action="/add" method="POST">
+            <label for="name">Name:</label>
+            <input type="text" name="name" id="name" required>
+            <label for="publisher">Publisher:</label>
+            <input type="text" name="publisher" id="publisher" required>
+            <label for="quantity">Quantity:</label>
+            <input type="number" name="quantity" id="quantity" required>
+            <button type="submit">Add</button>
+        </form>
+        <a href="/" class="button">Back to List</a>
+    </div>
+</body>
+</html>
